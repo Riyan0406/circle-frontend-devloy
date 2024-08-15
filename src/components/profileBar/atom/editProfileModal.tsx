@@ -47,7 +47,7 @@ const EditProfileModal: React.FC<EditProfileModalProps> = ({ open, onClose }) =>
         // Update user information (name, username, bio)
         await Axios({
             method: 'Patch',
-            url: `http://localhost:5500/user/${profile?.id}`,
+            url: `https://circle-backend-three.vercel.app/user/${profile?.id}`,
             data: {
                 name: name,
                 username: username,
@@ -72,7 +72,7 @@ const EditProfileModal: React.FC<EditProfileModalProps> = ({ open, onClose }) =>
 
             await Axios({
                 method: 'Patch',
-                url: `http://localhost:5500/user/attachment/${profile?.id}`,
+                url: `https://circle-backend-three.vercel.app/user/attachment/${profile?.id}`,
                 data: formData,
                 headers: {
                     Authorization: `Bearer ${token}`,

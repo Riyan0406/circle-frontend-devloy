@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Box, Typography } from "@mui/material";
+import { Avatar, Box, Typography } from "@mui/material";
 import { FiberManualRecord } from "@mui/icons-material";
 import ImageComponent from "./imageComponent";
 import { COLOR } from "../../utils/constant/color";
@@ -115,10 +115,13 @@ const ThreadCard: React.FC<IThreadCardProps> = ({ threads }) => {
                     overflow: "hidden"
                 }}
             >
-                <img
+                <Avatar
                     src={threads.author.profile.avatar}
                     alt={threads.author.fullname}
-                    width={"70rem"}
+                    sx={{
+                        width: '65px',
+                        height: '65px'
+                    }}
                 />
             </Box>
 

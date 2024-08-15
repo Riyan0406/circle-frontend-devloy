@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const API = axios.create({
-    baseURL: "http://localhost:5500/"
+    baseURL: "https://circle-backend-three.vercel.app/"
 });
 
 export const setAuthToken = (token?: string) => {

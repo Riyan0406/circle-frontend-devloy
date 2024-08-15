@@ -31,7 +31,7 @@ const ThreadForm: FC<IProps> = ({ placeholder, threadId }) => {
         const token = localStorage.getItem('token');
         await Axios({
             method: 'Post',
-            url: 'http://localhost:5500/threads/createThread',
+            url: 'https://circle-backend-three.vercel.app/threads/createThread',
             data: {
                 content: content
             },

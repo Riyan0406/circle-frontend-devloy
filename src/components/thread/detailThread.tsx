@@ -19,7 +19,7 @@ const DetailThread = () => {
         const token = localStorage.getItem('token');
         const response = await Axios({
             method: 'Get',
-            url: `http://localhost:5500/threads/replies/${data.thread.id}`,
+            url: `https://circle-backend-three.vercel.app/threads/replies/${data.thread.id}`,
             headers: {
                 Authorization: `Bearer ${token}`
             }

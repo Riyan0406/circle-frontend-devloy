@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Box, Typography } from "@mui/material";
+import { Avatar, Box, Typography } from "@mui/material";
 import { COLOR } from "../../../utils/constant/color";
 import { useAppDispatch, useAppSelector } from "../../../store";
 import { useEffect, useState } from "react";
@@ -69,7 +69,7 @@ export default function Profile() {
                         }}
                     >
                         <img
-                            src={data.profile?.profile.cover}
+                            src={data.profile?.profile.cover || 'https://res.cloudinary.com/dbzdxsmvy/image/upload/v1715825082/default/h9avlwzp3lj3hlunlzbc.webp'}
                             alt="profile"
                             width={"100%"}
                         />
@@ -77,25 +77,20 @@ export default function Profile() {
 
                     <Box
                         sx={{
-                            width: "80px",
-                            height: "80px",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
                             position: "absolute",
                             top: 56,
                             left: 24,
                             border: "3px solid #262626",
-                            borderRadius: "50px",
-                            bgcolor: "white",
-                            overflow: "hidden"
+                            borderRadius: '50px'
                         }}
                     >
-                        <img
+                        <Avatar
                             src={data.profile?.profile.avatar}
-                            alt=""
-                            width={"100rem"}
-                            style={{ objectFit: "cover" }}
+                            alt="pp"
+                            sx={{
+                                width: '65px',
+                                height: '65px'
+                            }}
                         />
                     </Box>
                 </Box>

@@ -25,7 +25,7 @@ export default function Watermark() {
                 <a href="https://github.com/axelode" target="_blank">
                     <GitHub sx={{ color: 'white' }} />
                 </a>
-                <a href="https://www.linkedin.com/in/endang-triyana-6613502a7/" target="_blank">
+                <a href="https://www.linkedin.com/in/endang-triyana/" target="_blank">
                     <LinkedIn sx={{ color: 'white' }} />
                 </a>
                 <a href="https://www.instagram.com/endg_666" target="_blank">

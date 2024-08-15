@@ -20,7 +20,7 @@ const ResultCard: FC<IProps> = ({ user }) => {
         const token = localStorage.getItem('token');
         const response = await Axios({
             method: 'Post',
-            url: 'http://localhost:5500/follow',
+            url: 'https://circle-backend-three.vercel.app/follow',
             params: {
                 followingId: followingId
             },
