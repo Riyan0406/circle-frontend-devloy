@@ -14,7 +14,7 @@ const SearchBar: FC<searchProps> = ({ setResult }) => {
         const token = localStorage.getItem('token');
         const response = await Axios({
             method: 'Post',
-            url: 'https://circle-backend-three.vercel.app/user/friend/search',
+            url: 'https://circle-backend-devloy-pjw9.vercel.app/user/friend/search',
             data: {
                 condition: condition
             },

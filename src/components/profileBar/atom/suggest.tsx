@@ -19,7 +19,7 @@ const Suggest: FC<suggestProps> = ({ suggest }) => {
         const token = localStorage.getItem('token');
         const response = await Axios({
             method: 'Post',
-            url: 'https://circle-backend-three.vercel.app/follow',
+            url: 'https://circle-backend-devloy-pjw9.vercel.app/follow',
             params: {
                 followingId: followingId
             },

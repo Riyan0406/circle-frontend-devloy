@@ -48,7 +48,7 @@ const ThreadModal: FC<IProps> = ({ open, onClose, sValue, placeholder, threadId 
 
         await Axios({
             method: 'POST',
-            url: 'https://circle-backend-three.vercel.app/threads/createThread/WImage',
+            url: 'https://circle-backend-devloy-pjw9.vercel.app/threads/createThread/WImage',
             data: formData,
             params: {
                 userId: profile?.id,
