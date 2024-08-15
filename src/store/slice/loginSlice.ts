@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { IUser } from "../../types/app";
 import { authCheckAsync, loginAsync } from "../asyncThunk/loginAsync"
 
 interface IAuthState {

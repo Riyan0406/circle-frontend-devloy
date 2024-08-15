@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { IThread } from "../../types/app"
 import { getThreadsAsync } from "../asyncThunk/threadAsync"
 
 interface IInitialState {
